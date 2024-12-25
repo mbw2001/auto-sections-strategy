@@ -90,35 +90,20 @@ class AutoSectionsStrategy extends HTMLTemplateElement {
       .reduce<LovelaceViewSection[]>((sections, [key, cards]) => {
         if (key === 'undefined' || key === 'null') {
           if (config.show_ungrouped === false) return sections;
-
-          return [
-            ...sections,
-            {
-              title: config.show_ungrouped,
-              type: 'grid',
-              cards: [
-                {
-                  type: 'heading',
-                  heading: config.show_ungrouped,
-                  heading_style: 'title',
-                },
-                ...cards,
-              ],
-            },
-          ];
+          const heading = config.show_ungrouped;
+        } else {
+          const heading = config.group_name ?? ''
         }
-
         return [
           ...sections,
           {
-            title: computeSectionTitle(key, config.group_name, hassContext),
             type: 'grid',
             cards: [
               {
                 type: 'heading',
                 heading: computeSectionTitle(
                   key,
-                  config.group_name,
+                  heading,
                   hassContext
                 ),
                 heading_style: 'title',
