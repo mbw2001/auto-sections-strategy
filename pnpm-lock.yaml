@@ -26,7 +26,7 @@ importers:
         version: 7.26.0
       '@commitlint/cli':
         specifier: ^18.6.1
-        version: 18.6.1(@types/node@20.11.25)(typescript@5.4.2)
+        version: 18.6.1(@types/node@22.10.3)(typescript@5.4.2)
       '@commitlint/config-conventional':
         specifier: ^18.6.2
         version: 18.6.3
@@ -52,8 +52,8 @@ importers:
         specifier: ^4.4.9
         version: 4.4.9
       '@types/node':
-        specifier: ^20.11.25
-        version: 20.11.25
+        specifier: ^22.10.3
+        version: 22.10.3
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -468,6 +468,9 @@ packages:
 
   '@types/node@20.11.25':
     resolution: {integrity: sha512-TBHyJxk2b7HceLVGFcpAUjsa5zIdsPWlR6XHfyGzd0SFu+/NFgQgMAl96MSDZgQDvJAvV6BKsFOrt6zIL09JDw==}
+
+  '@types/node@22.10.3':
+    resolution: {integrity: sha512-DifAyw4BkrufCILvD3ucnuN8eydUfc/C1GlyrnI+LK6543w5/L3VeVgf05o3B4fqSXP1dKYLOZsKfutpxPzZrw==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -1755,6 +1758,9 @@ packages:
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
+  undici-types@6.20.0:
+    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
+
   unique-string@1.0.0:
     resolution: {integrity: sha512-ODgiYu03y5g76A1I9Gt0/chLCzQjvzDy7DsZGsLOE/1MrF6wriEskSncj1+/C58Xk/kPZDppSctDybCwOSaGAg==}
     engines: {node: '>=4'}
@@ -1981,11 +1987,11 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@commitlint/cli@18.6.1(@types/node@20.11.25)(typescript@5.4.2)':
+  '@commitlint/cli@18.6.1(@types/node@22.10.3)(typescript@5.4.2)':
     dependencies:
       '@commitlint/format': 18.6.1
       '@commitlint/lint': 18.6.1
-      '@commitlint/load': 18.6.1(@types/node@20.11.25)(typescript@5.4.2)
+      '@commitlint/load': 18.6.1(@types/node@22.10.3)(typescript@5.4.2)
       '@commitlint/read': 18.6.1
       '@commitlint/types': 18.6.1
       execa: 5.1.1
@@ -2035,7 +2041,7 @@ snapshots:
       '@commitlint/rules': 18.6.1
       '@commitlint/types': 18.6.1
 
-  '@commitlint/load@18.6.1(@types/node@20.11.25)(typescript@5.4.2)':
+  '@commitlint/load@18.6.1(@types/node@22.10.3)(typescript@5.4.2)':
     dependencies:
       '@commitlint/config-validator': 18.6.1
       '@commitlint/execute-rule': 18.6.1
@@ -2043,7 +2049,7 @@ snapshots:
       '@commitlint/types': 18.6.1
       chalk: 4.1.2
       cosmiconfig: 8.3.6(typescript@5.4.2)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.11.25)(cosmiconfig@8.3.6(typescript@5.4.2))(typescript@5.4.2)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@22.10.3)(cosmiconfig@8.3.6(typescript@5.4.2))(typescript@5.4.2)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -2300,6 +2306,10 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
+  '@types/node@22.10.3':
+    dependencies:
+      undici-types: 6.20.0
+
   '@types/normalize-package-data@2.4.4': {}
 
   '@types/resolve@1.20.2': {}
@@ -2488,9 +2498,9 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@5.0.0(@types/node@20.11.25)(cosmiconfig@8.3.6(typescript@5.4.2))(typescript@5.4.2):
+  cosmiconfig-typescript-loader@5.0.0(@types/node@22.10.3)(cosmiconfig@8.3.6(typescript@5.4.2))(typescript@5.4.2):
     dependencies:
-      '@types/node': 20.11.25
+      '@types/node': 22.10.3
       cosmiconfig: 8.3.6(typescript@5.4.2)
       jiti: 1.21.0
       typescript: 5.4.2
@@ -3508,6 +3518,8 @@ snapshots:
   typescript@5.4.2: {}
 
   undici-types@5.26.5: {}
+
+  undici-types@6.20.0: {}
 
   unique-string@1.0.0:
     dependencies:
